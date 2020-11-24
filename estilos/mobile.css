@@ -1,0 +1,118 @@
+@charset "UTF-8";
+@media (max-width: 768px) {
+  /* Generales */
+  /* Header y menu */
+
+  .bodystyle .header {
+    align-items: center;
+    margin-top: 2%;
+    width: 90%;    
+  }
+
+  .titLogo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 100%;
+  }
+
+  .titLogo .logo {
+    width: 20%;
+  }
+
+
+  .menu {
+    position: absolute;
+    background-color: #0000EC;
+    width: 100%;
+    display: none;
+    margin: 0% 0% 0% 0%;
+    z-index: 1;
+  }
+
+
+
+  /* atributos del menú desplegable */
+  .menu ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  /* atributos del menú desplegable */
+  .menu a {
+    display: block;
+    padding: 0% 0%;
+    margin: 30%;
+  }
+  /* estilo de los items del menú */
+  .menu ul li a {
+    color: #FFF;
+  }
+  /* movimiento del menú desplegable */
+  #check-menu:checked ~ .menu {
+    position: absolute;
+    margin: 19% 0% 00% -10%;
+    width: 100%;
+    height: 33vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  /* barras del menú hamburguesa lo que
+    no aparezca mientras está la x */
+  #check-menu:checked ~ .bars-menu {
+    display: none;
+  }
+  /* x del menú hamburguesa */
+  #check-menu:checked ~ .x-menu {
+    display: block;
+    width: 10%;
+    margin: 0% 0% 0% 0%;
+  }
+  /* barras del menú hamburguesa */
+  .bars-menu {
+    display: inline-block;
+    margin: 0% -70% 0% 0%;
+    width: 8%;
+  }
+  /* Main */
+  .bodystyle .main {
+    background: url(/imagenes/bgd-mobile.svg);
+    background-attachment: relative;
+    background-size: cover;
+    background-position: relative;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 1%;
+    padding: 0%;
+  }
+  .main .main-texto {
+    margin: 45% 10% 20% 10%;
+    width: 70%;
+  }
+  .main .main-texto h2 {
+    margin-top: 10%;
+    font-size: 500%;
+    line-height: 100%;
+  }
+  .main .main-texto p {
+    margin-top: 5%;
+    font-size: 500%;
+    line-height: 150%;
+  }
+  .main .main-contacto {
+    width: 100%;
+    text-align: center;
+    height: 5vw;
+  }
+  .main .boton-contacto {
+    background-color: rgba(114, 103, 103, 0.05);
+    font-size: 3vw;
+  }
+  /* Footer */
+  .footer p {
+    font-size: 3vw;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */
