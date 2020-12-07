@@ -1,210 +1,67 @@
 @charset "UTF-8";
-/* Generales */
-body {
-  font-family: 'Roboto Mono', monospace;
-  color: #060A24;
-  font-size: 3vw;
-  line-height: 1.5vw;
-  width: 100%;
-  height: auto;
-  padding: 0%;
-  margin: 0%; 
-}
-
-.bodystyle {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.titLogo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 50%;
-}
-
-.logo {
-  width: 10%;
-  padding-right: 3%;
-}
-
-/* Header y su contenido como conjunto */
-.header {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  align-items: center;
-  height: 5vh;
-  padding: 2% 6%;
-  grid-area: header; 
-}
-
-.header h2 {
-  color: #103882;
-  font-size: 80%;
-  width: auto;
-}
-
-/* los checkbox */
-#check-menu {
-  display: none; }
-
-/* los checkbox */
-#checked-menu {
-  display: none; }
-
-/* la x y barras del menú responsive, pero es la parte que va en la versión desktop */
-header label {
-  display: none;
-  height: auto; }
-
-/* modifica el logo o la fuente que utilicemos como logo */
-.header a {
-  color: #060A24;
-  text-decoration: none; }
-
-/* solo las opciones generales del menú, es decir, la parte derecha del header */
-.menu {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-content: center; }
-
-/* las opciones específicas del menú, es decir, de cada item y su disposición en el menú */
-.menu ul {
-  margin: 0%;
-  list-style: none;
-  padding: 0%;
-  display: inline-flex; }
-
-/* como cambia el puntero y la sombra que se hace cuando me paro sobre el menú */
-.menu li:hover {
-  cursor: pointer;
-  background: rgba(0, 0, 0, 0.05); }
-
-/* estilo de los items del menú */
-.menu ul li a {
-  display: block;
-  padding: 0% 1vw;
-  text-decoration: none;
-  font-size: 1.7vw; 
-  color: #103882;
-}
 
 /* Main */
-.main {
-  grid-area: main;
-  /* background: url(https://images.pexels.com/photos/1600162/pexels-photo-1600162.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); */
-  background: url(https://images.pexels.com/photos/290386/pexels-photo-290386.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-  /* background: url(https://images.pexels.com/photos/4366061/pexels-photo-4366061.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); */
-  background-attachment: relative;
-  background-size: cover;
-  /* background-position: absolute; */
-  background-repeat: space;
-  width: 100%;
-  height: auto;
-  padding: 28% 0% 0% 0%;
-  align-content: center;
-  z-index: 999; }
-
-
-.main .blockText {
-  font-family: 'DIN condensed';
+.main-texto2 {
   display: flex;
   flex-direction: column;
+  padding: 2vw 0vw 12vw 0vw;
+  background: rgba(167, 164, 164, 0.1);
+  background: rgba(203, 200, 211, 0.9);
   justify-content: center;
   text-align: center;
-  align-items: center;
-  margin: -24% 0% 25.5% 20%;
-  font-size: 70%;
-  color: #103882;
-  background-color: rgba(255,255,255,.5);
-  width: 30%;
-  border-radius: 2vh 2vh 2vh 2vh;
-  -moz-border-radius: 2vh 2vh 2vh 2vh;
-  -webkit-border-radius: 2vh 2vh 2vh 2vh;
 }
 
-.main .tituloText {
-  font-family: 'DIN condensed';
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  text-align: center;
-  align-items: center;
-  line-height: 120%;
-  margin: 0% 0% 0% 0%;
-  font-size: 150%;
-  width: auto;
+/* PORTADA */
+.backG2 {
+  background-size: cover;
+  background-image: url("https://images.pexels.com/photos/461064/pexels-photo-461064.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  opacity: 1;
 }
 
-.main .email {
-  font-family: 'DIN condensed';
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  text-align: center;
-  align-items: center;
-  margin: 0% 0% 0% 0%;
-  font-size: 100%;
-  width: auto;
+.mainContacto {
+  color: #053b69;
+  font-size: 2vw;
+  font-family: 'Alata', sans-serif;
+  width: 100%;
 }
 
-.main .email p {
- margin-left: 5%;
-}
-
-.main .telefono {
-  font-family: 'DIN condensed';
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  text-align: center;
-  align-items: center;
-  margin: 0% 0% 0% 0%;
-  font-size: 100%;
-  width: auto;
-}
-
-.main .telefono p {
-  margin-left: 5%;
- }
-
-.main-texto h2 {
-  margin: 4% 5% 0% 5%;
-  font-size: 150%;
-  font-weight: 700;
-  line-height: 100%;
-}
-
-.main-texto p {
-  margin: 2% 5% 0% 5%;
-  font-size: 100%;
-}
-
-.main-contacto {
-  width: 58%;
-  text-align: center; 
-}
-
-.credPhoto h5 {
-  position: relative;
-  color: #ffffff;
-  font-size: .5rem;
-  display: flex;
-  flex-direction: row-reverse;
-  margin: 17% 1% 0% 0%;
-  z-index: 5;
-}
-
-/* Footer */
-.footer {
-  grid-area: footer;
-  text-align: center;
+.textoContacto {
+  color: #4d4d4d;
+  width: 44%;
   font-size: 1.2vw;
-  padding: 0% 0%;
-  color: #060A24; }
+  margin: auto;
+  text-align: justify;
+}
 
-/*# sourceMappingURL=desktop.css.map */
+.notaContacto2 {
+  background: #ffffff;
+  padding: 1vw 0vw;
+  border-radius: 2vw;
+  width: 40vw ;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  box-shadow: 0px 4px 28px 10px rgba(0,0,0,0.2);
+}
+
+.itemContacto {
+  color: #4d4d4d;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin: 1vw 0vw;;
+}
+
+.itemContacto i {
+  color: #4d4d4d;
+  margin-right: 1vw;
+  font-size: 2vw;
+}
+
+.itemContacto p {
+  color: #4d4d4d;
+  padding: 0%;
+  margin: 0%;
+  
+}

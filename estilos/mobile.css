@@ -1,118 +1,149 @@
 @charset "UTF-8";
 @media (max-width: 768px) {
   /* Generales */
-  /* Header y menu */
 
-  .bodystyle .header {
-    align-items: center;
-    margin-top: 2%;
-    width: 90%;    
+  .titLogo H2 {
+    font-size: 3vw;
+  }
+  
+  .logo {
+    width: 5vw;
   }
 
-  .titLogo {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    font-size: 100%;
-  }
-
-  .titLogo .logo {
-    width: 20%;
-  }
-
-
-  .menu {
-    position: absolute;
-    background-color: #0000EC;
-    width: 100%;
-    display: none;
-    margin: 0% 0% 0% 0%;
-    z-index: 1;
-  }
-
-
-
-  /* atributos del menú desplegable */
-  .menu ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  /* atributos del menú desplegable */
-  .menu a {
-    display: block;
-    padding: 0% 0%;
-    margin: 30%;
-  }
-  /* estilo de los items del menú */
   .menu ul li a {
-    color: #FFF;
+    padding: 0% 1.4vw;
+    font-size: 2.6vw; 
   }
-  /* movimiento del menú desplegable */
-  #check-menu:checked ~ .menu {
-    position: absolute;
-    margin: 19% 0% 00% -10%;
-    width: 100%;
-    height: 33vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
+
+  .main-texto {
+    padding: 18vw;
+  }
+
+  .mainPortada {
+    color: #ebe6e6;
+    font-size: 12vw;
+    font-family: 'Alata', sans-serif;
+    font-style: unset;
+    width: 90%;
+  }
+
+  /* Servicios */
+
+  .titulo {
+    width: 90%;
+    font-size: 5vw;
+  }
+
+  .servicios {
+    flex-direction: column;
+  }
+
+  .nuestrosServicios {
+    width: 90%;
+    margin: 6vw auto;
+  }
+
+  .nuestrosServicios img {
+    width: 10vw;
+  }
+
+  .nuestrosServicios .subtitulo {
+    font-size: 3.6vw;
+  }
+
+  .info {
+    font-size: 4vw;
+  }
+
+  /* RAZONES */
+  .item {
+    width: 42%;
+    margin-bottom: 10vw;
+  }
+
+  .item .subtitulo {
+    font-size: 4vw;
+  }
+
+  .item p {
+    font-size: 3.3vw;
+  }
+
+
+  /* CONTACTAR */
+  .contactar {
     display: flex;
+    flex-direction: column-reverse;
+    background-color: #325573;
+    position: relative;
+    z-index: 1;
+    /* width: 50%; */
   }
-  /* barras del menú hamburguesa lo que
-    no aparezca mientras está la x */
-  #check-menu:checked ~ .bars-menu {
+
+  .imageContact img {
     display: none;
-  }
-  /* x del menú hamburguesa */
-  #check-menu:checked ~ .x-menu {
-    display: block;
-    width: 10%;
-    margin: 0% 0% 0% 0%;
-  }
-  /* barras del menú hamburguesa */
-  .bars-menu {
-    display: inline-block;
-    margin: 0% -70% 0% 0%;
-    width: 8%;
-  }
-  /* Main */
-  .bodystyle .main {
-    background: url(/imagenes/bgd-mobile.svg);
-    background-attachment: relative;
-    background-size: cover;
-    background-position: relative;
-    background-repeat: no-repeat;
     width: 100%;
-    margin-top: 1%;
-    padding: 0%;
   }
-  .main .main-texto {
-    margin: 45% 10% 20% 10%;
-    width: 70%;
-  }
-  .main .main-texto h2 {
-    margin-top: 10%;
-    font-size: 500%;
-    line-height: 100%;
-  }
-  .main .main-texto p {
-    margin-top: 5%;
-    font-size: 500%;
-    line-height: 150%;
-  }
-  .main .main-contacto {
-    width: 100%;
+
+  .blockText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    height: 5vw;
+    margin: 4vw 0vw;
+    width: 100%;
   }
-  .main .boton-contacto {
-    background-color: rgba(114, 103, 103, 0.05);
+
+  .titleContacto {
+    font-size: 4vw;
+  }
+
+  .titleContacto input {
+    width: 82%;
+    height: 7vw;
+  }
+
+  textarea{
+    resize: none;
+    width: 83%;
+    height: 20vw;
+    background: #f0f0f0;
+    border-width: 1px;
+    border-color: #848484;
+    padding: 1vw;
+  }
+
+  /* Botones */
+
+  .myButton {
     font-size: 3vw;
   }
-  /* Footer */
-  .footer p {
+
+  .myButton2 {
     font-size: 3vw;
   }
+
+  footer {
+    font-size: 2.6vw;
+  }
+
+  .redesSociales a i {
+    font-size: 4vw;
+  }
+
+
+/* -------------------  WHATSAPP ------------------------- */
+
+.logoW {
+  position: fixed;
+  height: 12vw;
+  top: 120vw;
+  left: 86vw;
+  cursor: pointer;
+  z-index: 5;
+}
+/* -------------------------------------------------------- */
+
 }
 /*# sourceMappingURL=mobile.css.map */

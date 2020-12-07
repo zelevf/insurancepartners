@@ -1,0 +1,28 @@
+@charset "UTF-8";
+@media (max-width: 768px) {
+
+  .mainContacto {
+    font-size: 5vw;
+    width: 60%;
+    margin: 5vw auto;
+  }
+
+  .textoContacto {
+    width: 60%;
+    font-size: 4vw;
+  }
+
+  /* -------------------  WHATSAPP ------------------------- */
+
+  .logoW {
+    position: fixed;
+    height: 12vw;
+    top: 80vw;
+    left: 86vw;
+    cursor: pointer;
+    z-index: 5;
+  }
+  /* -------------------------------------------------------- */
+
+}
+/*# sourceMappingURL=mobile.css.map */

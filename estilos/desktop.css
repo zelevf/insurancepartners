@@ -3,12 +3,7 @@
 body {
   font-family: 'Roboto Mono', monospace;
   color: #060A24;
-  font-size: 3vw;
-  line-height: 1.5vw;
   width: 100%;
-  height: auto;
-  padding: 0%;
-  margin: 0%; 
 }
 
 .bodystyle {
@@ -25,8 +20,13 @@ body {
   width: 50%;
 }
 
+.titLogo H2 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.6vw;
+}
+
 .logo {
-  width: 10%;
+  width: 2.4vw;
   padding-right: 3%;
 }
 
@@ -34,31 +34,15 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  position: fixed;
   position: relative;
   align-items: center;
-  height: 5vh;
-  padding: 2% 6%;
-  grid-area: header; 
+  padding: .5% 5%; 
+  background: #ffffff;
+  z-index: 8;
+  width: 90%;
 }
 
-.header h2 {
-  color: #103882;
-  font-size: 80%;
-  width: auto;
-}
-
-/* los checkbox */
-#check-menu {
-  display: none; }
-
-/* los checkbox */
-#checked-menu {
-  display: none; }
-
-/* la x y barras del menú responsive, pero es la parte que va en la versión desktop */
-header label {
-  display: none;
-  height: auto; }
 
 /* modifica el logo o la fuente que utilicemos como logo */
 .header a {
@@ -70,95 +54,328 @@ header label {
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-content: center; }
+  align-content: center; 
+}
 
 /* las opciones específicas del menú, es decir, de cada item y su disposición en el menú */
 .menu ul {
   margin: 0%;
   list-style: none;
   padding: 0%;
-  display: inline-flex; }
+  display: flex; 
+}
 
-/* como cambia el puntero y la sombra que se hace cuando me paro sobre el menú */
-.menu li:hover {
-  cursor: pointer;
-  background: rgba(0, 0, 0, 0.05); }
-
-/* estilo de los items del menú */
 .menu ul li a {
   display: block;
   padding: 0% 1vw;
   text-decoration: none;
-  font-size: 1.7vw; 
+  font-size: 1.2vw; 
   color: #103882;
 }
 
-/* Main */
-.main {
-  grid-area: main;
-  background: url(https://images.pexels.com/photos/1600162/pexels-photo-1600162.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-  /* background: url(https://images.pexels.com/photos/290386/pexels-photo-290386.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); */
-  /* background: url(https://images.pexels.com/photos/4366061/pexels-photo-4366061.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); */
-  background-attachment: relative;
+/* como cambia el puntero y la sombra que se hace cuando me paro sobre el menú */
+.menu li:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.05); 
+}
+
+/* PORTADA */
+.backG {
   background-size: cover;
-  /* background-position: absolute; */
-  background-repeat: space;
-  width: 100%;
-  height: auto;
-  padding: 28% 0% 0% 0%;
-  align-content: center;
-  z-index: 999; }
+  background-image: url("https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?cs=srgb&dl=pexels-startup-stock-photos-7096.jpg&fm=jpg");
+  opacity: 0.9;
+}
 
 .main-texto {
-  font-family: 'DIN condensed';
+  padding: 12vw;
+  background: rgba(13, 24, 124, 0.5);
+}
+
+.mainPortada {
+  color: #ebe6e6;
+  font-size: 4vw;
+  font-family: 'Alata', sans-serif;
+  font-style: unset;
+  width: 70%;
+}
+
+
+
+/* RAZONES */
+
+.aprender {
+  padding: 3vw;
+}
+
+.titulo {
+  text-align: center;
+  margin: auto;
+  font-size: 1.8vw;
+  font-family: 'Alata', sans-serif;
+  padding: 3vw 0vw 1vw 0vw;
+}
+
+.razones {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.item {
+  width: 20%;
+  align-items: center;
+  padding: 0vw 1vw;
+  box-shadow: 0px 2px 13px 3px rgba(0,0,0,0.15);
+}
+
+.item .subtitulo {
+  font-size: 1.5vw;
+  text-align: center;
+  color: #af1010;
+  font-family: 'Oswald', sans-serif;
+  /* font-weight: bolder; */
+}
+
+.item p {
+  font-size: 1.15vw;
+  text-align: initial;
+  color: #000000;
+}
+
+.item img {
+  width: 100%;
+  justify-content: center;
+}
+
+
+
+/* Servicios */
+.servicios {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nuestrosServicios {
+  width: 25%;
+}
+
+.nuestrosServicios img {
+  width: 4vw;
+}
+
+.nuestrosServicios .subtitulo {
+  font-size: 1.4vw;
+}
+
+.info {
+  font-size: 1.2vw;
+}
+
+
+
+/* Contactar */
+
+.contactForm {
+  width: 100%;
+}
+
+.blockText{
+  align-items: center;
+}
+
+.notaContacto{
+  background: #ffffff;
+  padding: 1vw 0vw;
+  border-radius: 2vw;
+  width: 80%;
+  margin: 1vw 0vw 1vw 1vw;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+form {
+  /* align-items: center; */
+  text-align: center;
+  /* margin: auto; */
+  justify-content: center;
+}
+
+.contactar {
+  display: flex;
+  flex-direction: row;
+  background-color: #325573;
+  position: relative;
+  z-index: 1;
+  /* width: 50%; */
+}
+
+.imageContact {
+  width: 50%;
+}
+.imageContact img {
+  width: 100%;
+}
+
+.blockText {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  text-align: center;
-  margin: -24% 0% 25.5% 10%;
-  font-size: 50%;
-  line-height: 150%; 
-  color: #103882;
-  background-color: rgba(255,255,255,.5);
-  width: 22%;
-  border-radius: 2vh 2vh 2vh 2vh;
-  -moz-border-radius: 2vh 2vh 2vh 2vh;
-  -webkit-border-radius: 2vh 2vh 2vh 2vh;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
 }
 
-.main-texto h2 {
-  margin: 4% 5% 0% 5%;
-  font-size: 150%;
-  font-weight: 700;
-  line-height: 100%;
-}
-
-.main-texto p {
-  margin: 2% 5% 0% 5%;
-  font-size: 100%;
-}
-
-.main-contacto {
-  width: 58%;
-  text-align: center; 
-}
-
-.credPhoto h5 {
-  position: relative;
+.titleContacto {
   color: #ffffff;
-  font-size: .5rem;
-  display: flex;
-  flex-direction: row-reverse;
-  margin: 17% 1% 0% 0%;
-  z-index: 5;
+  margin-bottom: 1.3vw;
+  font-size: 1.1vw;
+  font-family: 'PT Sans', sans-serif;
 }
 
-/* Footer */
-.footer {
-  grid-area: footer;
-  text-align: center;
-  font-size: 1.2vw;
-  padding: 0% 0%;
-  color: #060A24; }
+.titleContacto input {
+  width: 73.8%;
+  height: 1.2vw;
+  padding: 1vw 1vw;
+  border-width: 1px;
+  border-color: #e0e0e0;
+  background: #f0f0f0;
+  color: #5e5d5d;
+}
 
-/*# sourceMappingURL=desktop.css.map */
+.titleContacto p {
+  margin-bottom: .1vw;
+  color: #b4b4b4;
+  width: 34%;
+}
+
+.itemContacto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemContacto i {
+  color: #ffffff;
+}
+
+.itemContacto p {
+  margin-left: 1vw;
+  font-size: 1.4vw;
+  font-family: 'Oswald', sans-serif;
+}
+
+textarea{
+  resize: none;
+  width: 74%;
+  height: 4vw;
+  background: #f0f0f0;
+  border-width: 1px;
+  border-color: #848484;
+  padding: 1vw;
+}
+
+
+
+/* Botones */
+
+.myButton {
+	background-color:#44c767;
+	border-radius: .5vw;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size: 1vw;
+	padding: .7vw 1.4vw;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #2f6627;
+  box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.25);
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.myButton2 {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+	border-radius: .5vw;
+	border: 1px solid #c62d1f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size: 1vw;
+	padding: .7vw 1.4vw;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #f24437;
+  box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.25);
+}
+
+.myButton2:hover {
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+}
+
+.myButton2:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+
+
+
+/* -----------------------------------------  WHATSAPP --------------------------------------------------- */
+
+.logoW {
+  position: fixed;
+  height: 6vw;
+  top: 43vw;
+  left: 93vw;
+  cursor: pointer;
+  z-index: 5; 
+}
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+
+/* footer {
+  padding: 1vw 0vw;
+  margin: auto;
+} */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  padding: 1vw 0vw;
+  margin: auto;
+  align-items: center;
+  font-size: 1vw;
+  color: #585858;
+}
+
+.redesSociales{
+  margin-right: 2vw;
+  justify-content: space-between;
+}
+
+.redesSociales a {
+  margin-left: 1vw;
+}
+
+.redesSociales a i {
+  color: #585858;
+  font-size: 1.4vw;
+}

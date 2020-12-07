@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>A1 Language Learning - Contacto</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Oswald:wght@200;300;400;700&family=PT+Sans:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body class="bodystyle">
@@ -15,75 +15,80 @@
             <img src="./imagenes/LOGO.png" alt="" class="logo">
             <h2>A1 LANGUAGE LEARNING</h2>
         </div>
-        <input type="checkbox" id="check-menu">
-        <label for="check-menu" class="bars-menu"><img src="./imagenes/bars-solid.svg" alt="abrir-menu"></label> 
-        <input type="checkbox" id="checked-menu">
-        <label for="check-menu" class="x-menu"><img src="./imagenes/times-solid.svg" alt="cerrar-menu"></label>  
         <nav class="menu">
             <ul id="menu-lista">
                 <li><a href="./index.html">INICIO</a></li>
                 <li><a href="#">NOSOTROS</a></li>
-                <li><a href="#">CONTACTO</a></li> 
+                <li><a href="./contacto.html">CONTACTO</a></li> 
             </ul>
         </nav>
     </header>
-    <main class="main">
-            <!-- <form action="http://192.168.112.248:8888" method="POST"> -->
-        <!-- <form action="http://192.168.112.248:8888" method="POST" class="blockText">
-            <div>
-                <input type="text" name="nombre" placeholder="Nombre" required>
-            </div>
-            <div>
-                <input type="text" name="surname" placeholder="Apellido" required>
-            </div>
-            <div>
-                <input type="email" id="mail" placeholder="Email" required>
-            </div>
-            <div>
-                <label for="modalidad">¿Cuál consideras es tu nivel de inglés?</label>
-                <br>
-                <input type="radio" name="poco" value="poco"/>Muy poco conocimiento<br/>
-                <input type="radio" name="medio" value="medio"/>Conocimiento intermedio<br/>
-                <input type="radio" name="alto" value="alto"/>Mucho conocimiento<br/>
-            </div>
-            <div>
-                <label for="modalidad">Modalidad</label>
-                <br>
-                <input type="radio" name="modalidad" value="Presencial" />Presencial<br />
-                <input type="radio" name="modalidad" value="Online" />Online<br />
-            </div>
-            <div>
-                <input type="number" name="telefono" placeholder="Teléfono" required>
-            </div>
-            <br>
-            <div>
-                <label for="descripcionpersonal">Agrega una descripción personal</label>
-                <br>
-                <textarea name="descripcion" id="descripcion" cols="50" rows="4" maxlength="300"></textarea>
-            </div>
-            <input type="submit" value="Enviar"> <input type="reset" value="Reset">
-        </form> -->
-        <div class="blockText">
-            <div class="tituloText">
-                <p>COMUNÍCATE<br>CON NOSOTROS</p>
-            </div>
-            <div class="email">
-                <i class="far fa-envelope"></i>
-                <p>Info@a1englishlearning.com</p>
-            </div>
-            <div class="telefono">
-                <i class="fas fa-mobile-alt"></i>
-                <p>(202)9960576</p>
-            </div>
-            <div class="rrss">
-                <i class="fab fa-instagram"></i>
-                <p>(202)9960576</p>
+
+    <section >
+        <div class="backG2">
+
+            <div class="main-texto2">
+
+                <div>
+                    <h2 class="mainContacto"><strong>¿QUIERES COMUNICARTE CON NOSOTROS?</strong></h2>
+                    <p class="textoContacto"><strong>Puedes escribirnos a través de las siguientes opciones, escribirnos a través de nuestro botón de Whatsapp o llenar el formulario y escribir tu consulta.</strong></p>
+                    <div class="itemContacto">
+                        <i class="far fa-envelope"></i>
+                        <p>info@a1englishlearning.com</p>
+                    </div>
+                    <div class="itemContacto">
+                        <i class="fas fa-mobile-alt"></i>
+                        <p>(202)9960576</p>
+                    </div>
+                    <div class="itemContacto">
+                        <i class="fab fa-instagram"></i>
+                        <p>@a1languagelearning</p>
+                    </div>
+                </div>
+
+                <div class="notaContacto2">
+                    <form action="submit">
+                        <div class="titleContacto">
+                            <p>Nombre</p>
+                            <input type="text" required>
+                        </div>     
+                        <div class="titleContacto">
+                            <p>Email</p>
+                            <input type="email" required>
+                        </div>    
+                        <div class="titleContacto">
+                            <p>Consulta</p>
+                            <textarea name="consulta" cols="50" rows="4" maxlength="500"></textarea>
+                        </div> 
+                        <div class="botones">
+                            <!-- Este input de abajo de decir submit  -->
+                            <input type="submit" value="Enviar" class="myButton">
+                            <input type="reset" value="Reset" class="myButton2"> 
+                        </div>  
+                 
+                    </form>
+                </div>
             </div>
         </div>
-    </main>
-    <footer class="footer">
-        <p>© 2020 - Miami, United States</p>
+    </section>
+
+    <div class="container-redes">
+        <a href="#" id="numberW">
+            <img src="./imagenes/Logo-W.svg" alt="logo de whatsapp" class="logoW" id="logoW">
+        </a>
+    </div>
+
+    <footer>
+        <div class="redesSociales">
+            <a href="https://instagram.com/a1languagelearning/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/A1LanguageLearning"><i class="fab fa-facebook-square"></i></a>
+        </div>
+        <div class="ciudadFecha">
+            <h3>Florida, United States of America 2020</h3>
+        </div>
     </footer>
+
+    <script src="app.js"></script> 
 </body>
 </html>
 
