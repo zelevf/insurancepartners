@@ -2,7 +2,7 @@
 @media (max-width: 768px) {
 
   .mainContacto {
-    font-size: 5vw;
+    font-size: 4vw;
     width: 60%;
     margin: 5vw auto;
   }
@@ -12,17 +12,20 @@
     font-size: 4vw;
   }
 
-  /* -------------------  WHATSAPP ------------------------- */
-
-  .logoW {
-    position: fixed;
-    height: 12vw;
-    top: 80vw;
-    left: 86vw;
-    cursor: pointer;
-    z-index: 5;
+  .itemContacto i {
+    font-size: 6vw;
   }
-  /* -------------------------------------------------------- */
+  
+  .itemContacto p {
+    margin: 2vw 0vw;
+    font-size: 4vw;
+  }
+
+  .notaContacto2 {
+    margin-top: 5vw;
+    padding: 1vw 0vw 4vw 0vw;
+    width: 70vw ;
+  }
 
 }
 /*# sourceMappingURL=mobile.css.map */

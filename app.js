@@ -8,7 +8,7 @@ document.getElementById('logoW').addEventListener('click', function(e) {
 function writeToW() {   
     let number = document.getElementById('numberW');
     let miNumber = '17864437366';
-    let mensaje = 'Hola, quisiera información de sus productos.'
+    let mensaje = 'Hola, quisiera información de sus cursos.'
     number.href = `https://api.whatsapp.com/send?phone=${miNumber}&text=${mensaje}`;
 }
 
