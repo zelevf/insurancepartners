@@ -15,7 +15,26 @@ function writeToW() {
 // --------------------------------------------------------------------------------------------------------------------------------- 
 
 
-setTimeout(() => {
-    // funcion o comando que vaya a ejecutar;
-    divMensaje.remove();
-}, 1000);
+// setTimeout(() => {
+//     // funcion o comando que vaya a ejecutar;
+//     divMensaje.remove();
+// }, 1000);
+
+
+{/* <h2 class="mainPortada"><strong>APRENDE INGLÉS FÁCIL Y RÁPIDO CON NOSOTROS</strong></h2> */}
+
+
+// let texto = document.querySelector('main-texto');
+// texto.appendChild('h2') = 
+
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('Documento listo');
+
+    console.log('Pasó 1 segundo');
+    const texto = document.createElement('h2');
+    texto.textContent = 'APRENDE INGLÉS FÁCIL Y RÁPIDO CON NOSOTROS';
+    texto.classList.add('mainPortada');
+
+    let newTexto = document.querySelector('.main-texto');
+    newTexto.appendChild(texto)
+});
