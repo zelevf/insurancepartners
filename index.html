@@ -30,8 +30,7 @@
     <section >
         <div class="backG">
             <div class="main-texto">
-                <!-- <h2 class="mainPortada"><strong>APRENDE INGLÉS FÁCIL Y RÁPIDO CON NOSOTROS</strong></h2> -->
-                <!-- <p>- Clases personalizadas. <br>- Donde quieras.<br>- Método garantizado.</p> -->
+                <h2 class="mainPortada"><strong>APRENDE INGLÉS FÁCIL Y RÁPIDO CON NOSOTROS</strong></h2>
             </div>
         </div>
     </section>
@@ -96,52 +95,32 @@
             <div class="imageContact">
                 <img src="./imagenes/contacIMG.png" alt="contacto">
             </div>
-            <div class="blockText">
+            <div class="blockText" id="blockText">
 
                 <div class="notaContacto">
-                    <form action="submit">
+                    <form action="/send-email" method="POST">
                         <div class="titleContacto">
                             <p>Nombre</p>
-                            <input type="text" required>
+                            <input type="text" id="nombreConsulta" required>
                         </div>     
                         <div class="titleContacto">
                             <p>Email</p>
-                            <input type="email" required>
+                            <input type="email" id="emailConsulta" required>
                         </div>    
                         <div class="titleContacto">
                             <p>Consulta</p>
-                            <textarea name="consulta" cols="50" rows="4" maxlength="500"></textarea>
+                            <textarea name="consulta" cols="50" rows="4" maxlength="500" id="textoConsulta"></textarea>
                         </div> 
                         <div class="botones">
-                            <!-- Este input de abajo de decir submit  -->
-                            <input type="submit" value="Enviar" class="myButton">
-                            <input type="reset" value="Reset" class="myButton2"> 
+                            <input type="submit" value="Enviar" class="myButton" id="enviarConsulta">
+                            <input type="reset" value="Reset" class="myButton2" id="borrarConsulta"> 
                         </div>  
                  
                     </form>
                 </div>
-
-                <!-- <div class="notaContacto">
-                    <div class="itemContacto">
-                        <i class="far fa-envelope"></i>
-                        <p>info@a1englishlearning.com</p>
-                    </div>
-                    <div class="itemContacto">
-                        <i class="fas fa-mobile-alt"></i>
-                        <p>(202)9960576</p>
-                    </div>
-                    <div class="itemContacto">
-                        <i class="fab fa-instagram"></i>
-                        <p>(202)9960576</p>
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>
-
-    <!-- <footer>
-        <p>© 2020 - Florida, United States of America</p>
-    </footer> -->
 
     <div class="container-redes">
         <a href="#" id="numberW">
@@ -155,6 +134,7 @@
             <a href="https://www.facebook.com/A1LanguageLearning"><i class="fab fa-facebook-square"></i></a>
         </div>
         <div class="ciudadFecha">
+            <!-- ESTO LO PUEDO HACER DINAMICO -->
             <h3>Florida, United States of America 2020</h3>
         </div>
     </footer>

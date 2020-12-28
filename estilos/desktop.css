@@ -109,6 +109,7 @@ body {
   font-family: 'Alata', sans-serif;
   font-style: unset;
   width: 70%;
+  opacity: 0;
 }
 
 
@@ -267,6 +268,14 @@ form {
   color: #5e5d5d;
 }
 
+.titleContacto textarea {
+  border-width: 1px;
+  border-color: #e0e0e0;
+  background: #f0f0f0;
+  color: #5e5d5d;
+  box-shadow: inset 1px 1px 0px 0px rgb(134, 134, 134);
+}
+
 .titleContacto p {
   margin-bottom: .1vw;
   color: #b4b4b4;
@@ -318,9 +327,9 @@ textarea{
   text-shadow:0px 1px 0px #2f6627;
   box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.25);
 }
-.myButton:hover {
+/* .myButton:hover {
 	background-color:#5cbf2a;
-}
+} */
 .myButton:active {
 	position:relative;
 	top:1px;
@@ -343,10 +352,10 @@ textarea{
   box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.25);
 }
 
-.myButton2:hover {
+/* .myButton2:hover {
 	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
 	background-color:#c62d1f;
-}
+} */
 
 .myButton2:active {
 	position:relative;

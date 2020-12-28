@@ -1,0 +1,34 @@
+{
+  "name": "1-a1languagelearning",
+  "version": "1.0.0",
+  "description": "Academia de idiomas A1 language Learning",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zelevf/A1LeanguageLearning.git"
+  },
+  "keywords": [
+    "Language",
+    "english",
+    "chinese",
+    "ingles",
+    "chino",
+    "español",
+    "espanol",
+    "spanish"
+  ],
+  "author": "Fernando Vélez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zelevf/A1LeanguageLearning/issues"
+  },
+  "homepage": "https://github.com/zelevf/A1LeanguageLearning#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.4.17"
+  }
+}
