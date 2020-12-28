@@ -18,7 +18,6 @@ function writeToW() {
 
 
 
-
 // CAMBIAR A APARECER EN TRANSICION Y NO GENERAR EL TEXTO 
 document.addEventListener('DOMContentLoaded', () => {
 
