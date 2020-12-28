@@ -19,7 +19,6 @@ function writeToW() {
 
 
 
-
 // setTimeout(() => {
 //     // funcion o comando que vaya a ejecutar;
 //     divMensaje.remove();

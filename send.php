@@ -22,5 +22,4 @@ $asunto = 'Consulta realizada a A1 Language Learning';
 mail($para, $asunto, utf8_decode($consulta), $header);
 
 header("Location:/");
-
 ?>
