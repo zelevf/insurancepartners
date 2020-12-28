@@ -20,20 +20,13 @@ function writeToW() {
 
 
 
-// setTimeout(() => {
-//     // funcion o comando que vaya a ejecutar;
-//     divMensaje.remove();
-// }, 1000);
-
-
-
 // CAMBIAR A APARECER EN TRANSICION Y NO GENERAR EL TEXTO 
 document.addEventListener('DOMContentLoaded', () => {
 
     setTimeout(() => {
-        const texto = document.querySelector('.mainPortada');
-        texto.style.opacity = 1;
-        texto.style.transitionDuration = "1s";
+        const photo = document.querySelector('.fotoNosotros');
+        photo.style.opacity = 1;
+        photo.style.transitionDuration = "1s";
     }, 800);
 
 });
@@ -286,54 +279,5 @@ window.addEventListener('scroll', () => {
 })
 
 // --------------------------------------------------------------------------------------------------------------------------------- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// --------------------------- APAREZCA BOTON IR AL PRINCIPIO ------------------------
-
-const btnSubirInicio = document.querySelector(".subirInicio");
-
-window.addEventListener('scroll', () => {
-    const seccionAprender = document.querySelector('.aprender');
-    const ubicacion = seccionAprender.getBoundingClientRect();
-
-    // MOBILE 
-    if (window.matchMedia("(max-width: 768px)").matches) {
-        if(ubicacion.top < 950) {
-            btnSubirInicio.style.opacity = 1;
-            btnSubirInicio.style.right = "0vw";
-            btnSubirInicio.style.transitionDuration = ".5s";
-        } else {
-            btnSubirInicio.style.opacity = 0;
-            btnSubirInicio.style.right = "-4vw";
-            btnSubirInicio.style.transitionDuration = ".5s";
-        };
-    } 
-    
-    // DESKTOP
-    if (window.matchMedia("(min-width: 769px)").matches){
-        if(ubicacion.top < 500) {
-            btnSubirInicio.style.opacity = 1;
-            btnSubirInicio.style.right = "0vw";
-            btnSubirInicio.style.transitionDuration = ".5s";
-        } else {
-            btnSubirInicio.style.opacity = 0;
-            btnSubirInicio.style.right = "-4vw";
-            btnSubirInicio.style.transitionDuration = ".5s";
-        };
-    }
-})
 
 

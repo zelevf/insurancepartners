@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body class="bodystyle">
-    <header class="header">
+    <header class="header" id="topHeader">
         <div class="titLogo">
             <img src="./imagenes/LOGO-A1-CuatroFranjas.svg" alt="Logo A1 Laguange Learning" class="logo">
             <h2>LANGUAGE LEARNING</h2>
@@ -98,14 +98,15 @@
             <div class="blockText" id="blockText">
 
                 <div class="notaContacto">
-                    <form action="/send-email" method="POST">
+
+                    <form action="send.php" method="POST" id='sendMessage'>
                         <div class="titleContacto">
                             <p>Nombre</p>
-                            <input type="text" id="nombreConsulta" required>
+                            <input type="text" name= "name" id="nombreConsulta" required>
                         </div>     
                         <div class="titleContacto">
                             <p>Email</p>
-                            <input type="email" id="emailConsulta" required>
+                            <input type="email" name= "email" id="emailConsulta" required>
                         </div>    
                         <div class="titleContacto">
                             <p>Consulta</p>
@@ -115,9 +116,10 @@
                             <input type="submit" value="Enviar" class="myButton" id="enviarConsulta">
                             <input type="reset" value="Reset" class="myButton2" id="borrarConsulta"> 
                         </div>  
-                 
                     </form>
+
                 </div>
+
             </div>
         </div>
     </section>
@@ -128,6 +130,8 @@
         </a>
     </div>
 
+    <a href="#topHeader"><img src="./imagenes/chevron-up-solid.svg" alt="Subir" class="subirInicio"></a>
+    
     <footer>
         <div class="redesSociales">
             <a href="https://instagram.com/a1languagelearning/"><i class="fab fa-instagram"></i></a>
@@ -135,7 +139,7 @@
         </div>
         <div class="ciudadFecha">
             <!-- ESTO LO PUEDO HACER DINAMICO -->
-            <h3>Florida, United States of America 2020</h3>
+            <h3>2020 © All Rights Reserved</h3>
         </div>
     </footer>
 

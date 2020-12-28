@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /* Generales */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto Mono', monospace;
   color: #060A24;
@@ -34,11 +38,12 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  position: fixed;
+  /* position: fixed; */
   position: relative;
   align-items: center;
-  padding: .5% 5%; 
+  padding: 0% 5%; 
   background: #ffffff;
+  background: #ffffff56;
   z-index: 8;
   width: 90%;
 }
@@ -93,6 +98,7 @@ body {
 
 /* PORTADA */
 .backG {
+  /* margin-top: 4.6vw; */
   background-size: cover;
   background-image: url("https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?cs=srgb&dl=pexels-startup-stock-photos-7096.jpg&fm=jpg");
   opacity: 0.9;
@@ -373,15 +379,30 @@ textarea{
 .logoW {
   position: fixed;
   height: 6vw;
-  top: 43vw;
-  left: 93vw;
+  bottom: 2vw;
+  right: 2vw;
   cursor: pointer;
   z-index: 5; 
 }
 
+
+/* -----------------------------------------  Subir al inicio --------------------------------------------------- */
+
+.subirInicio {
+  position: fixed;
+  height: 2.4vw;
+  bottom: 10vw;
+  right: -4vw;
+  cursor: pointer;
+  z-index: 5; 
+  padding: .3vw;
+  padding-right: .8vw;
+  background-color: #af1010d0;
+  opacity: 0;
+}
+
+
 /* -------------------------------------------------------------------------------------------------------- */
-
-
 
 /* footer {
   padding: 1vw 0vw;

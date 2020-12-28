@@ -50,20 +50,20 @@
                     <form action="submit">
                         <div class="titleContacto">
                             <p>Nombre</p>
-                            <input type="text" required>
+                            <input type="text" id='nombreConsulta' required>
                         </div>     
                         <div class="titleContacto">
                             <p>Email</p>
-                            <input type="email" required>
+                            <input type="email" id="emailConsulta" required>
                         </div>    
                         <div class="titleContacto">
                             <p>Consulta</p>
-                            <textarea name="consulta" cols="50" rows="4" maxlength="500"></textarea>
+                            <textarea name="consulta" cols="50" rows="4" maxlength="500" id="textoConsulta"></textarea>
                         </div> 
                         <div class="botones">
                             <!-- Este input de abajo de decir submit  -->
-                            <input type="submit" value="Enviar" class="myButton">
-                            <input type="reset" value="Reset" class="myButton2"> 
+                            <input type="submit" value="Enviar" class="myButton" id="enviarConsulta">
+                            <input type="reset" value="Reset" class="myButton2" id="borrarConsulta"> 
                         </div>  
                  
                     </form>
@@ -88,7 +88,7 @@
         </div>
     </footer>
 
-    <script src="app.js"></script> 
+    <script src="app2.js"></script> 
 </body>
 </html>
 
