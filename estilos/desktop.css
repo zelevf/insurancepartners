@@ -106,7 +106,7 @@ body {
   -webkit-transition-duration: .2s;
           transition-duration: .2s;
   cursor: pointer;
-  background: #103882;
+  background: #19527a;
 }
 
 .bodystyle .portada1 .backG {
@@ -118,7 +118,8 @@ body {
 
 .bodystyle .portada1 .backG .main-texto {
   padding: 12vw;
-  background: rgba(13, 24, 124, 0.5);
+  background: rgba(193, 211, 4, 0.5);
+  background: rgba(25, 82, 122, 0.5);
 }
 
 .bodystyle .portada1 .backG .main-texto .mainPortada {
@@ -126,7 +127,7 @@ body {
   font-size: 4vw;
   font-family: 'Alata', sans-serif;
   font-style: unset;
-  width: 70%;
+  width: 60%;
   opacity: 0;
 }
 
@@ -208,7 +209,7 @@ body {
   /* font-size: 1.5vw; */
   font-size: 140%;
   text-align: center;
-  color: #af1010;
+  color: #19527a;
   font-family: 'Oswald', sans-serif;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -458,7 +459,7 @@ footer .redesSociales a i {
   z-index: 5;
   padding: .3vw;
   padding-right: .8vw;
-  background-color: #af1010d0;
+  background-color: #c1d304;
   opacity: 0;
 }
 /*# sourceMappingURL=desktop.css.map */

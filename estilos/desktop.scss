@@ -78,7 +78,7 @@ body {
                 li:hover {
                     transition-duration: .2s;
                     cursor: pointer;
-                    background: #103882; 
+                    background: #19527a; 
                 }
             }
         }
@@ -94,14 +94,16 @@ body {
             .main-texto {
                 padding: 12vw;
                 // background: #c1d30405;
-                background: rgba(13, 24, 124, 0.5);
+                background: rgba(193, 211, 4, 0.5);
+                background: rgba(25, 82, 122, 0.5);
 
                 .mainPortada {
                     color: #ebe6e6;
+                    // color: #19527a;
                     font-size: 4vw;
                     font-family: 'Alata', sans-serif;
                     font-style: unset;
-                    width: 70%;
+                    width: 60%;
                     opacity: 0;
                 }
             }
@@ -166,7 +168,7 @@ body {
                     /* font-size: 1.5vw; */
                     font-size: 140%;
                     text-align: center;
-                    color: #af1010;
+                    color: #19527a;
                     font-family: 'Oswald', sans-serif;
                     align-items: center;
                     /* font-weight: bolder; */
@@ -381,7 +383,7 @@ footer {
     z-index: 5; 
     padding: .3vw;
     padding-right: .8vw;
-    background-color: #af1010d0;
+    background-color: #c1d304;
     opacity: 0;
-  }
+}
   
