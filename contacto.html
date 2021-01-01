@@ -31,41 +31,39 @@
 
                 <div>
                     <h2 class="mainContacto"><strong>¿QUIERES COMUNICARTE CON NOSOTROS?</strong></h2>
-                    <p class="textoContacto"><strong>Puedes escribirnos a través de las siguientes opciones, escribirnos a través de nuestro botón de Whatsapp o llenar el formulario y escribir tu consulta.</strong></p>
+                    <p class="textoContacto"><strong>Puedes comunicarte a través de las siguientes opciones, escribirnos a través de nuestro botón de Whatsapp o llenar el formulario y escribir tu consulta.</strong></p>
                     <div class="itemContacto">
                         <i class="far fa-envelope"></i>
-                        <p>info@a1englishlearning.com</p>
+                        <p>insurancepartners@correo.com</p>
                     </div>
                     <div class="itemContacto">
                         <i class="fas fa-mobile-alt"></i>
-                        <p>(202)9960576</p>
+                        <p>+1 (848) 525-3582</p>
                     </div>
                     <div class="itemContacto">
                         <i class="fab fa-instagram"></i>
-                        <p>@a1languagelearning</p>
+                        <p>@insurancepartners</p>
                     </div>
                 </div>
 
                 <div class="notaContacto2">
-                    <form action="submit">
+                    <form action="send.php" method="POST" id='sendMessage'>
                         <div class="titleContacto">
                             <p>Nombre</p>
-                            <input type="text" id='nombreConsulta' required>
+                            <input type="text" name= "name" id="nombreConsulta" required>
                         </div>     
                         <div class="titleContacto">
                             <p>Email</p>
-                            <input type="email" id="emailConsulta" required>
+                            <input type="email" name= "email" id="emailConsulta" required>
                         </div>    
                         <div class="titleContacto">
                             <p>Consulta</p>
                             <textarea name="consulta" cols="50" rows="4" maxlength="500" id="textoConsulta"></textarea>
                         </div> 
                         <div class="botones">
-                            <!-- Este input de abajo de decir submit  -->
                             <input type="submit" value="Enviar" class="myButton" id="enviarConsulta">
                             <input type="reset" value="Reset" class="myButton2" id="borrarConsulta"> 
                         </div>  
-                 
                     </form>
                 </div>
             </div>
@@ -84,7 +82,7 @@
         </div>
         <div class="ciudadFecha">
             <!-- ESTO LO PUEDO HACER DINAMICO -->
-            <h3>2020 © All Rights Reserved</h3>
+            <h3>2021© All Rights Reserved</h3>
         </div>
     </footer>
 

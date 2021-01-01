@@ -7,8 +7,8 @@ document.getElementById('logoW').addEventListener('click', function(e) {
 
 function writeToW() {   
     let number = document.getElementById('numberW');
-    let miNumber = '17864437366';
-    let mensaje = 'Hola, quisiera información de sus cursos.'
+    let miNumber = '18485253582';
+    let mensaje = 'Hola, quisiera más información.'
     number.href = `https://api.whatsapp.com/send?phone=${miNumber}&text=${mensaje}`;
 }
 
@@ -18,16 +18,7 @@ function writeToW() {
 
 
 
-// CAMBIAR A APARECER EN TRANSICION Y NO GENERAR EL TEXTO 
-document.addEventListener('DOMContentLoaded', () => {
 
-    setTimeout(() => {
-        const photo = document.querySelector('.fotoNosotros');
-        photo.style.opacity = 1;
-        photo.style.transitionDuration = "1s";
-    }, 800);
-
-});
 
 
 
@@ -235,46 +226,6 @@ function mensajeEnviado() {
 
 
 
-
-
-
-
-
-// ----------------------------------------------- POR QUÉ DEBO APRENDER INGLÉS ----------------------- 
-
-window.addEventListener('scroll', () => {
-    const seccionAprender = document.querySelector(".razones");
-    const ubicacion = seccionAprender.getBoundingClientRect();
-
-    const scrollPX = window.scrollY;
-
-    // MOBILE 
-    if (window.matchMedia("(max-width: 768px)").matches) {
-        if(window.scrollY < 950) {
-            seccionAprender.style.transitionDuration = ".1s";
-            seccionAprender.style.opacity = "0";
-        } else {
-            setTimeout(() => {
-                seccionAprender.style.transitionDuration = ".6s";
-                seccionAprender.style.opacity = "1";
-            }, 400);
-        };
-    } 
-    
-    // DESKTOP
-    if (window.matchMedia("(min-width: 769px)").matches){
-        if(scrollPX < 110) {
-            seccionAprender.style.transitionDuration = ".1s";
-            seccionAprender.style.opacity = "0";
-
-        } else {
-            setTimeout(() => {
-                seccionAprender.style.transitionDuration = ".6s";
-                seccionAprender.style.opacity = "1";
-            }, 400);
-        };
-    }
-})
 
 // --------------------------------------------------------------------------------------------------------------------------------- 
 

@@ -1,0 +1,190 @@
+@media (max-width: 768px) {
+  .backG2 {
+    background-size: cover;
+    background-image: url("https://images.pexels.com/photos/461064/pexels-photo-461064.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+
+    .main-texto2 {
+      display: flex;
+      flex-direction: column;
+      padding: 4vw 0vw 12vw 0vw;
+      background: #a7a4a41a;
+      background: rgba(204, 212, 114, 0.8);
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+
+      div {
+        width: 80%;
+        .mainContacto {
+          color: #053b69;
+          font-size: 6vw;
+          font-family: "Alata", sans-serif;
+          width: 100%;
+        }
+
+        .textoContacto {
+          color: #4d4d4d;
+          width: 90%;
+          font-size: 4.8vw;
+          margin: auto;
+          text-align: justify;
+        }
+
+        .itemContacto {
+          display: flex;
+          flex-direction: row;
+          color: #4d4d4d;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          margin: 5vw auto;
+
+          i {
+            color: #4d4d4d;
+            margin-right: 1vw;
+            font-size: 5vw;
+          }
+
+          p {
+            color: #4d4d4d;
+            padding: 0%;
+            margin: 0%;
+            font-size: 5vw;
+          }
+        }
+      }
+
+      .notaContacto2 {
+        background: #ffffff;
+        padding: 1vw 0vw;
+        border-radius: 2vw;
+        width: 80%;
+        margin: 1vw 1vw 1vw 1vw;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        form {
+          display: flex;
+          flex-direction: column;
+          // /* align-items: center; */
+          // text-align: center;
+          margin-left: -2vw;
+          // justify-content: center;
+          align-items: center;
+
+          .titleContacto {
+            color: #ffffff;
+            margin-bottom: 1.3vw;
+            font-size: 4.5vw;
+            font-family: "PT Sans", sans-serif;
+
+            input {
+              width: 100%;
+              height: 5vw;
+              padding: 1vw 1vw;
+              border-width: 1px;
+              border-color: #e0e0e0;
+              background: #f0f0f0;
+              color: #5e5d5d;
+            }
+
+            p {
+              margin-bottom: 0.1vw;
+              color: #b4b4b4;
+              text-align: left;
+            }
+
+            textarea {
+              color: #5e5d5d;
+              box-shadow: inset 1px 1px 0px 0px rgb(134, 134, 134);
+              resize: none;
+              width: 100%;
+              height: 24vw;
+              background: #f0f0f0;
+              border-width: 1px;
+              border-color: #848484;
+              padding: 1vw;
+            }
+          }
+
+          .botones {
+            .myButton {
+              background-color: #44c767;
+              border-radius: 0.5vw;
+              border: 1px solid #18ab29;
+              display: inline-block;
+              cursor: pointer;
+              color: #ffffff;
+              font-family: Arial;
+              font-size: 4vw;
+              padding: 0.7vw 1.4vw;
+              text-decoration: none;
+              text-shadow: 0px 1px 0px #2f6627;
+              box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25);
+            }
+            /* .myButton:hover {
+                        background-color:#5cbf2a;
+                    } */
+            .myButton:active {
+              position: relative;
+              top: 1px;
+            }
+
+            .myButton2 {
+              background: linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+              background-color: #f24437;
+              border-radius: 0.5vw;
+              border: 1px solid #c62d1f;
+              display: inline-block;
+              cursor: pointer;
+              color: #ffffff;
+              font-family: Arial;
+              font-size: 4vw;
+              padding: 0.7vw 1.4vw;
+              text-decoration: none;
+              text-shadow: 0px 1px 0px #f24437;
+              box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25);
+            }
+
+            .myButton2:hover {
+              background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+              background-color: #c62d1f;
+            }
+
+            .myButton2:active {
+              position: relative;
+              top: 1px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    padding: 1vw 0vw;
+    margin: auto;
+    align-items: center;
+    font-size: 3vw;
+    color: #585858;
+
+    .redesSociales{
+        margin-right: 2vw;
+        justify-content: space-between;
+
+        a {
+            margin-left: 1vw;
+
+            i {
+                color: #585858;
+                font-size: 4vw;
+            }
+        }
+    }
+}
+}
+
+

@@ -1,0 +1,51 @@
+@media (max-width: 768px) {
+  .presentation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 1vw;
+  }
+  .presentation .infoNosotros2 {
+    width: 80%;
+  }
+  .presentation .infoNosotros2 h2 {
+    font-size: 5vw;
+  }
+  .presentation .infoNosotros2 div p {
+    font-size: 2.6vw;
+  }
+  .presentation .fotoNosotros img {
+    margin-bottom: 8vw;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 1vw 0vw;
+    margin: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 3vw;
+    color: #585858;
+  }
+  footer .redesSociales {
+    margin-right: 2vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .redesSociales a {
+    margin-left: 1vw;
+  }
+  footer .redesSociales a i {
+    color: #585858;
+    font-size: 4vw;
+  }
+}
+/*# sourceMappingURL=nosotrosMobile.css.map */
