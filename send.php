@@ -17,7 +17,7 @@ $consulta .= "Su consulta es: " . $_POST['consulta'] . "\r\n";
 $consulta .= "Mensaje enviado el: " . date('d/m/y', time());
 
 $para = 'fernandoveleze@gmail.com';
-$asunto = 'Consulta realizada a A1 Language Learning';
+$asunto = 'Consulta realizada a Insurance Partners';
 
 mail($para, $asunto, utf8_decode($consulta), $header);
 
